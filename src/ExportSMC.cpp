@@ -105,6 +105,10 @@ void ExportSMC::writeTransitions()
       continue;
 
     sn1 = s->getStateName();
+    if(!sn1.compare("nil")){
+        *out << "// nil" << endl;
+        continue;
+    }
     sn1.replace(QRegExp(" "), "_");
 
     *out << sn1.latin1() << endl;

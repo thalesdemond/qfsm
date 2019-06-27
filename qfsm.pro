@@ -105,7 +105,8 @@ HEADERS += src/AppInfo.h \
     src/ExportTestbenchVHDL.h \
     src/ExportTestvectorASCII.h \
     src/ImportGraphviz.h \
-    src/Import.h
+    src/Import.h \
+    src/ExportSMC.h
 SOURCES += src/AppInfo.cpp \
     src/Convert.cpp \
     src/DocStatus.cpp \
@@ -193,7 +194,8 @@ SOURCES += src/AppInfo.cpp \
     src/XMLHandler.cpp \
     src/Zoom.cpp \
     src/ImportGraphviz.cpp \
-    src/Import.cpp
+    src/Import.cpp \
+    src/ExportSMC.cpp
 
 FORMS = src/ExportVHDLDlg.ui \
     src/ExportAHDLDlg.ui \
